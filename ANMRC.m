@@ -58,7 +58,7 @@ if 0 <= pred_IR && pred_IR < l_ir
         % X - Y 差集的值與索引
         diffVals_XY = XX(~maskX);         % 值
         idxX_diff = find(~maskX);        % X 中的索引
-        not_common_rank_diff = cal_drift(Y, i, Kn, diffVals_XY, idxX_diff);
+        not_common_rank_diff = cal_DRD(Y, i, Kn, diffVals_XY, idxX_diff);
 
         % 存排名差
         rank_diff_set_C{i} = rank_diff;
@@ -213,7 +213,7 @@ if 0 <= pred_IR && pred_IR < l_ir
         % X - Y 差集的值與索引
         diffVals_XY = XX(~maskX);         % 值
         idxX_diff = find(~maskX);        % X 中的索引
-        not_common_rank_diff = cal_drift(Y, i, Kn, diffVals_XY, idxX_diff);
+        not_common_rank_diff = cal_DRD(Y, i, Kn, diffVals_XY, idxX_diff);
 
         % 存排名差
         rank_diff_set_C{i} = rank_diff;
