@@ -1,4 +1,4 @@
-function [result, Yidx_diff]= cal_drift(Y, i, Kn, diff_X, Xidx_diff)
+function [result, Yidx_diff]= cal_DRD(Y, i, Kn, diff_X, Xidx_diff)
 % Xidx_diff：X 的index (差集的)，也就是在X的排名
 % diff_X：差集集合
 % [Yidx_X, ~] = setdiff(neighborhoodX, neighborhoodY) ; % 取X、Y的差集
@@ -30,8 +30,8 @@ else
     for j = 1:length(Xidx_diff)
         x_pos = Xidx_diff(j);
         y_pos = find(Yidx_diff == diff_X(j)) + Kn;
-        drift = abs(x_pos - y_pos);
-        result = [result, drift];
+        DRD = abs(x_pos - y_pos);
+        result = [result, DRD];
     end
 
     %result = result' ;
@@ -39,12 +39,13 @@ else
     % for i = 1:length(Yidx_X)
     %     x_pos = find(neighborhoodX == Yidx_X(i));
     %     y_pos = i + Kn;
-    %     drift = abs(x_pos - y_pos);
-    %     result = [result, drift];
-    %     if drift <= r * (Kn - Common)
+    %     DRD = abs(x_pos - y_pos);
+    %     result = [result, DRD];
+    %     if DRD <= r * (Kn - Common)
     %         result = [result, x_pos];
     %     end
     % end
     % 
     % result = result' ;
 end
+
