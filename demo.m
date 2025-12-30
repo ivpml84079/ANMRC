@@ -1,5 +1,5 @@
 clear;close all;clc;
-run('D:\\YC\\vlfeat-0.9.21\\toolbox\\vl_setup')
+run('.\\vlfeat-0.9.21\\toolbox\\vl_setup')
 rng(42);
 
 %% parameter setting
