@@ -17,14 +17,7 @@ else
 
     % 根據 sortIdx 將 idx 排序
     Yidx_diff = diff_X(sortIdx);
-
-    % if add_max > size(Yidx_X,2)
-    %     add_max = size(Yidx_X,2);
-    % end
-    % 
-    % % 只取前幾個(看被移除多少，就最多再納入多少)
-    % Yidx_X = Yidx_X(1:add_max);
-
+    
     result = [];
     % 遍历 idx 中的每个值
     for j = 1:length(Xidx_diff)
@@ -34,18 +27,6 @@ else
         result = [result, DRD];
     end
 
-    %result = result' ;
-    % % 遍历 idx 中的每个值
-    % for i = 1:length(Yidx_X)
-    %     x_pos = find(neighborhoodX == Yidx_X(i));
-    %     y_pos = i + Kn;
-    %     DRD = abs(x_pos - y_pos);
-    %     result = [result, DRD];
-    %     if DRD <= r * (Kn - Common)
-    %         result = [result, x_pos];
-    %     end
-    % end
-    % 
-    % result = result' ;
 end
+
 
