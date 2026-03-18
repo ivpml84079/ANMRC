@@ -1,4 +1,4 @@
-function [index, pred_IR] = IRI-NMRC(X, Y, X_info, Y_info, Kn, lambda_set, eta, r, l_ir, h_ir, mult_low, mult_mid)
+function [index, pred_IR] = IRI_NMRC(X, Y, X_info, Y_info, Kn, lambda_set, eta, r, l_ir, h_ir, mult_low, mult_mid)
 
 Xt = X';
 Yt = Y';
