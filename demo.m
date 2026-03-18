@@ -37,9 +37,9 @@ gt = strip(replace(gt, '"', '')); % 去引號
 true_indices = find(strcmpi(gt, "true"));  % 忽略大小寫
 
 
-%% ANMRC
+%% IRI-NMRC
 tic;
-[index, pred_IR] = ANMRC(X, Y, info_X, info_Y, K, lambda, eta, r, l_ir, h_ir, mult_low, mult_mid);
+[index, pred_IR] = IRI-NMRC(X, Y, info_X, info_Y, K, lambda, eta, r, l_ir, h_ir, mult_low, mult_mid);
 runtime = toc 
 
 %% plot and accuracy
