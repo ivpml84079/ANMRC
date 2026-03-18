@@ -1,6 +1,6 @@
-# Adaptive Neighborhood Manifold Representation Consensus for Feature Matching via SIFT- and SVM-Based Inlier Rate Prediction (ANMRC)
+# Inlier Rate-Insensitive Neighborhood Manifold Representation Consensus for Feature Matching via SIFT- and SVM-Based Inlier Rate Prediction (IRI-NMRC)
 
-ANMRC is an adaptive feature matching framework designed to robustly remove outliers from initial correspondence sets. It estimates the inlier rate of matches and dynamically adjusts neighborhood manifold representations for correspondence verification, enabling reliable matching across varying inlier conditions.
+IRI-NMRC is an adaptive feature matching framework designed to robustly remove outliers from initial correspondence sets. It estimates the inlier rate of matches and dynamically adjusts neighborhood manifold representations for correspondence verification, enabling reliable matching across varying inlier conditions.
 
 ## Dependencies
 
